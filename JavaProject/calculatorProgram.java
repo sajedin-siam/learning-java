@@ -21,9 +21,15 @@ public class calculatorProgram {
 
         switch (operator) {
             case '+' -> result = num1 + num2;
-            case '-' -> result = num1 + num2;
-            case '*' -> result = num1 + num2;
-            case '/' -> result = num1 + num2;
+            case '-' -> result = num1 - num2;
+            case '*' -> result = num1 * num2;
+            case '/' -> {
+                if (num2 == 0) {
+                    System.out.println("Cannot divide by zero!");
+                } else {
+                    result = num1 / num2;
+                }
+            }
             case '^' -> result = Math.pow(num1, num2);
 
         }
