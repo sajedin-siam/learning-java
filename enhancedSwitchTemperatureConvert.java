@@ -5,7 +5,6 @@ public class enhancedSwitchTemperatureConvert {
         Scanner input = new Scanner(System.in);
 
         double temp;
-        double newTemp;
         String unit;
 
         System.out.print("convert to celsiud or fahrenheit?(C or F): ");
@@ -19,7 +18,8 @@ public class enhancedSwitchTemperatureConvert {
                 System.out.printf("Temperature: %.1f°C%n ", (temp - 32) * 5 / 9);
 
             case "F" ->
-                System.out.printf("Temperature: %.1f°C%n", (temp * 9 / 5) + 32);
+                System.out.printf("Temperature: %.1f°C%n",
+                        (temp * 9 / 5) + 32);
 
             default ->
                 System.out.println("Invalid unit!");
